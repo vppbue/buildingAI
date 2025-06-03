@@ -24,7 +24,7 @@ The idea solves the challenge of knowing what kind of exercise would be suitable
 The solution is best used as a mobile app. Also a webapp might be suitable for certain users.
 The app provides a weekly/monthly preliminary training plan to to allow scheduling the exercises in Outlook etc. calendar. On daily basis, the app would suggest the user a recommended exercise or to have a recovery day. For recovery days suggestions such as having a walk or doing some strecthing would be given.
 
-https://github.com/vppbue/buildingAI/blob/main/UI_mockup.png
+UI_mockup.png
 
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
