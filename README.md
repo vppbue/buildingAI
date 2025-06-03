@@ -20,64 +20,49 @@ Which problems does your idea solve? How common or frequent is this problem? Wha
 The idea solves the challenge of knowing what kind of exercise would be suitable for each day without having a personal trainer available. The idea also encourages the user to do even a light exercise when they face more stress or otherwise lack energy. On the other hand, when the user has a strong exercise history, the solution can encourage to increase the training load. 
 
 ## How is it used?
+Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 The solution is best used as a mobile app. Also a webapp might be suitable for certain users.
 The app provides a weekly/monthly preliminary training plan to to allow scheduling the exercises in Outlook etc. calendar. On daily basis, the app would suggest the user a recommended exercise or to have a recovery day. For recovery days suggestions such as having a walk or doing some strecthing would be given.
 
-<img scr="![UI](UI_mockup.png)" width="300"> 
-![UI](context_example_.png)
-
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+![UI](UI_mockup.png) 
+![context](context_example_.png)
+![data flow](data_flow.png)
+![general architecture](general_architecture.png)
+![suggestions](suggestion_examples.png)
+![user personas](user_persona_examples.png)
 
 
 ## Data sources and AI methods
 Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| data            | Description           |
+| -----------     | -----------           |
+| training data   | from user             |
+| targets         | from user             |
+| weather         | from internet         |
+| feeling         | from user             |
+| tone            | from user             |
+| available time  | from calendar         |
+
+**| AI method           | Description                                                                |
+| genAI                 | interpret user input: targets, feelings                                    |
+| genAI                 | generate output: training instructions                                     |
+| machine learning      | analyze reported feelings after exercise, try to optimize positive feeling |
 
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+The instructions are given by generative AI. They are not curated or reviewed by professionals. 
+The personal health data or limitations to do exercises are not collected unless speficically given by the user. E.g. "I am recovering from a flue, please adjust my training plan".
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+The project would need first service design expertise to validate the assumptions with real potential users. 
+After that development and data skills would be needed to plan the architecture and implement it.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* building AI course material
+* images created with OpenAI plus subscription
