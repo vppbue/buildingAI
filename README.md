@@ -42,7 +42,9 @@ Where does your data come from? Do you collect it yourself or do you use data co
 | tone            | from user             |
 | available time  | from calendar         |
 
-**| AI method            | Description           |**
+
+| AI method            | Description           |
+| -----------     | -----------           |
 | genAI                 | interpret user input: targets, feelings                                    |
 | genAI                 | generate output: training instructions                                     |
 | machine learning      | analyze reported feelings after exercise, try to optimize positive feeling |
