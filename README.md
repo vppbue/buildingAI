@@ -52,6 +52,7 @@ Where does your data come from? Do you collect it yourself or do you use data co
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+
 The instructions are given by generative AI. They are not curated or reviewed by professionals. 
 The personal health data or limitations to do exercises are not collected unless speficically given by the user. E.g. "I am recovering from a flue, please adjust my training plan".
 
